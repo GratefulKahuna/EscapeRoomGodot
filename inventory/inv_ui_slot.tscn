@@ -24,8 +24,4 @@ offset_bottom = 165.0
 [node name="Panel" type="Panel" parent="CenterContainer"]
 layout_mode = 2
 
-[node name="item_display" type="Sprite2D" parent="CenterContainer/Panel"]
-scale = Vector2(3, 3)
-offset = Vector2(-1, 2.5)
-
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]
