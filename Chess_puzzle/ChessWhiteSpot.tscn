@@ -1,5 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://3au55hyrxoxm"]
+[gd_scene load_steps=3 format=3 uid="uid://3au55hyrxoxm"]
 
+[ext_resource type="Script" path="res://Chess_puzzle/ChessWhiteSpot.gd" id="1_itjvh"]
 [ext_resource type="Texture2D" uid="uid://cup6d4v74vvp8" path="res://art/chess/ChessWhiteSpot.png" id="2_7ixhg"]
 
 [node name="Chess_white_spot" type="Panel"]
@@ -8,10 +9,10 @@ clip_contents = true
 custom_minimum_size = Vector2(150, 150)
 offset_right = 150.0
 offset_bottom = 150.0
+script = ExtResource("1_itjvh")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(83, 80)
-scale = Vector2(0.2, 0.2)
+position = Vector2(75, 75)
 texture = ExtResource("2_7ixhg")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
@@ -24,4 +25,5 @@ offset_bottom = 150.0
 layout_mode = 2
 
 [node name="item_display" type="Sprite2D" parent="CenterContainer/Panel"]
-scale = Vector2(3, 3)
+
+[connection signal="gui_input" from="." to="." method="_on_gui_input"]

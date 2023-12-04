@@ -1,8 +1,8 @@
 extends chessSquare
 
-class_name blackSquare
+class_name whiteSquare
 
-var whiteSquare = preload("res://Chess_puzzle/ChessWhiteSpot.gd")
+var blackSquare = preload("res://Chess_puzzle/ChessBlackSpot.gd")
 
 @onready var item_visual : Sprite2D = $CenterContainer/Panel/item_display
 @onready var slot_visual : Sprite2D = $Sprite2D
@@ -20,11 +20,11 @@ func update(slot: InvSlot) :
 		current_item = slot.item
 
 func unselect():
-	slot_visual.texture = load("res://art/chess/ChessBlackSpot.png")
+	slot_visual.texture = load("res://art/chess/ChessWhiteSpot.png")
 	selected = false
 	
 func select():
-	slot_visual.texture = load("res://art/chess/ChessBlackSpotSelected.png")
+	slot_visual.texture = load("res://art/chess/ChessWhiteSpotSelected.png")
 	Global.selectedChessSquare = self
 
 func _on_gui_input(event):
@@ -59,14 +59,15 @@ func _on_gui_input(event):
 				select()
 			
 			elif prev_selected and prev_selected == self:
-				slot_visual.texture = load("res://art/chess/ChessBlackSpot.png")
+				slot_visual.texture = load("res://art/chess/ChessWhiteSpot.png")
 				Global.selectedChessSquare = null
 				
 			else:
 				if prev_selected:
 					prev_selected.unselect()
-				select()
+				Global.selectedChessSquare = self
+				slot_visual.texture = load("res://art/chess/ChessWhiteSpotSelected.png")
 				
 		else:
 			Global.selectedChessSquare = null
-			slot_visual.texture = load("res://art/chess/ChessBlackSpot.png")
+			slot_visual.texture = load("res://art/chess/ChessWhiteSpot.png")

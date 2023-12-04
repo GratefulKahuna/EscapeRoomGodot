@@ -1,12 +1,15 @@
 extends Node
 
 var pawn = preload("res://inventory/items/chess_pawn.tres")
+var inv: Inv = preload("res://inventory/player_inventory.tres")
 
 var selectedSlot : slotPanel = null
-#var selectedChessSquare : chessSquare = null
-var random : chessSquare = null
+var selectedChessSquare : chessSquare = null
+
+var slotFirst = false
 
 func isChessPiece(item):
+	print("testing, isChessPiece")
 	return item == pawn
 		
 
@@ -17,4 +20,13 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	if selectedSlot:
+		if selectedChessSquare and slotFirst:
+			slotFirst = !slotFirst
+			selectedChessSquare.unselect()
+			selectedChessSquare = null
+	if selectedChessSquare:
+		if selectedSlot:
+			slotFirst = !slotFirst
+			selectedSlot.unselect()
+			selectedSlot = null

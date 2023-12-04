@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://2uya5jsrkkjw"]
+
+[ext_resource type="Script" path="res://inventory/items/chess_rook.gd" id="1_a3bfr"]
+[ext_resource type="Texture2D" uid="uid://c5kkxkrvi56h8" path="res://art/chess/white_pieces/chess_piece_2_white_rook.png" id="2_snhr6"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_w1h8s"]
+radius = 15.0
+height = 42.4
+
+[node name="chess_rook" type="Area2D"]
+scale = Vector2(5, 5)
+script = ExtResource("1_a3bfr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(66.6, 61.4)
+shape = SubResource("CapsuleShape2D_w1h8s")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(67.4, 58.2)
+scale = Vector2(0.25411, 0.255479)
+texture = ExtResource("2_snhr6")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

@@ -12,21 +12,20 @@ offset_bottom = 150.0
 script = ExtResource("1_ofmc1")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(83, 80)
-scale = Vector2(0.2, 0.2)
+position = Vector2(75, 75)
 texture = ExtResource("2_euwpl")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 0
+offset_top = 1.0
 offset_right = 150.0
-offset_bottom = 150.0
+offset_bottom = 151.0
 
 [node name="Panel" type="Panel" parent="CenterContainer"]
 layout_mode = 2
 
 [node name="item_display" type="Sprite2D" parent="CenterContainer/Panel"]
-scale = Vector2(3, 3)
 offset = Vector2(-1, 2.5)
 
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]
