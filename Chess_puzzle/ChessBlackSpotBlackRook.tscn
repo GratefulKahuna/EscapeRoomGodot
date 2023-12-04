@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmod0phfx7d2k"]
+
+[ext_resource type="Texture2D" uid="uid://bv7ql5cu58cfe" path="res://art/chess/ChessBlackSpot.png" id="2_bb8ib"]
+[ext_resource type="Texture2D" uid="uid://dx2idbjwyixpq" path="res://art/chess/black_pieces/chess_piece_2_black_rook.png" id="2_jb0b4"]
+
+[node name="Chess_black_spot_black_rook" type="Panel"]
+self_modulate = Color(1, 1, 1, 0)
+clip_contents = true
+custom_minimum_size = Vector2(150, 150)
+offset_right = 150.0
+offset_bottom = 150.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(83, 80)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_bb8ib")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 0
+offset_right = 150.0
+offset_bottom = 150.0
+
+[node name="Panel" type="Panel" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="item_display" type="Sprite2D" parent="CenterContainer/Panel"]
+texture = ExtResource("2_jb0b4")
+offset = Vector2(-1, 2.5)

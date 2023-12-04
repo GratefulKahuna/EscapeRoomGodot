@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://dxfjxwgn63g8c"]
+
+[ext_resource type="Script" path="res://inventory/items/apple.gd" id="1_jiu6x"]
+[ext_resource type="Texture2D" uid="uid://dt0wpi7tev54a" path="res://inventory/items/item 2-1.png.png" id="2_bspf2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_aky5s"]
+radius = 20.4
+
+[node name="apple" type="Area2D"]
+scale = Vector2(5, 5)
+script = ExtResource("1_jiu6x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(65.6, 56.8)
+shape = SubResource("CircleShape2D_aky5s")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(64.2, 63.4)
+scale = Vector2(2, 2)
+texture = ExtResource("2_bspf2")
+
+[connection signal="addItem" from="." to="." method="_on_add_item"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

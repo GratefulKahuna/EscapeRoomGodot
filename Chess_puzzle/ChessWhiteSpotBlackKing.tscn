@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://dag6n3p5hgbje"]
+
+[ext_resource type="Texture2D" uid="uid://cup6d4v74vvp8" path="res://art/chess/ChessWhiteSpot.png" id="1_tub5u"]
+[ext_resource type="Texture2D" uid="uid://cwng6ifjhvb5c" path="res://art/chess/black_pieces/chess_piece_2_black_queen.png" id="2_nllew"]
+
+[node name="Chess_white_spot" type="Panel"]
+self_modulate = Color(1, 1, 1, 0)
+clip_contents = true
+custom_minimum_size = Vector2(150, 150)
+offset_right = 150.0
+offset_bottom = 150.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(83, 80)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_tub5u")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 0
+offset_right = 150.0
+offset_bottom = 150.0
+
+[node name="Panel" type="Panel" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="item_display" type="Sprite2D" parent="CenterContainer/Panel"]
+texture = ExtResource("2_nllew")

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Inv" load_steps=8 format=3 uid="uid://bsdkwxoj6upio"]
+
+[ext_resource type="Script" path="res://inventory/inventory.gd" id="1_06fd4"]
+[ext_resource type="Script" path="res://inventory/InvSlot.gd" id="2_hmvit"]
+
+[sub_resource type="Resource" id="Resource_k6f4x"]
+script = ExtResource("2_hmvit")
+
+[sub_resource type="Resource" id="Resource_iw3nv"]
+script = ExtResource("2_hmvit")
+
+[sub_resource type="Resource" id="Resource_4wuhj"]
+script = ExtResource("2_hmvit")
+
+[sub_resource type="Resource" id="Resource_n7jta"]
+script = ExtResource("2_hmvit")
+
+[sub_resource type="Resource" id="Resource_r2vw8"]
+script = ExtResource("2_hmvit")
+
+[resource]
+script = ExtResource("1_06fd4")
+slots = Array[ExtResource("2_hmvit")]([SubResource("Resource_k6f4x"), SubResource("Resource_iw3nv"), SubResource("Resource_4wuhj"), SubResource("Resource_n7jta"), SubResource("Resource_r2vw8")])
