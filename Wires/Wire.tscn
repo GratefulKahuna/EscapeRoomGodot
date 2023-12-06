@@ -1,0 +1,520 @@
+[gd_scene load_steps=6 format=3 uid="uid://b8pcr7q1ak58v"]
+
+[ext_resource type="Script" path="res://Wire.gd" id="1_paywm"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_6s5ml"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_yolyl"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_mptvy"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_dx0l7"]
+
+[node name="Wire" type="Node2D"]
+script = ExtResource("1_paywm")
+
+[node name="LeftWires" type="Node2D" parent="."]
+
+[node name="Redwire" type="MeshInstance2D" parent="LeftWires"]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(40, 75)
+rotation = 3.14159
+scale = Vector2(78.2901, -35.8747)
+mesh = SubResource("BoxMesh_6s5ml")
+
+[node name="ControlRedLeft" type="Control" parent="LeftWires"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1.0
+offset_top = 56.0
+offset_right = 104.0
+offset_bottom = 96.0
+
+[node name="Tip of wire5" type="MeshInstance2D" parent="LeftWires"]
+modulate = Color(0.588235, 0.294118, 0, 1)
+position = Vector2(89, 75)
+rotation = 1.5708
+scale = Vector2(34.1987, 14.4337)
+mesh = SubResource("CapsuleMesh_yolyl")
+
+[node name="blackbar" type="MeshInstance2D" parent="LeftWires/Tip of wire5"]
+modulate = Color(0, 0, 0, 0.392157)
+position = Vector2(-0.0273902, 0.176663)
+rotation = 0.6353
+scale = Vector2(1.10458, 0.164025)
+mesh = SubResource("QuadMesh_mptvy")
+
+[node name="blackbar2" type="MeshInstance2D" parent="LeftWires/Tip of wire5"]
+modulate = Color(0, 0, 0, 0.392157)
+position = Vector2(0.0506585, -0.486689)
+rotation = 0.6353
+scale = Vector2(0.976143, 0.121921)
+mesh = SubResource("QuadMesh_mptvy")
+
+[node name="Yellowire" type="MeshInstance2D" parent="LeftWires"]
+modulate = Color(1, 1, 0, 1)
+position = Vector2(40, 525)
+rotation = 3.14159
+scale = Vector2(78.2901, -35.8747)
+mesh = SubResource("BoxMesh_6s5ml")
+
+[node name="ControlYellowleft" type="Control" parent="LeftWires"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1.0
+offset_top = 506.0
+offset_right = 104.0
+offset_bottom = 546.0
+
+[node name="Tip of wire2" type="MeshInstance2D" parent="LeftWires"]
+modulate = Color(0.588235, 0.294118, 0, 1)
+position = Vector2(88.3059, 525.23)
+rotation = 1.5708
+scale = Vector2(34.1987, 14.4337)
+mesh = SubResource("CapsuleMesh_yolyl")
+
+[node name="blackbar" type="MeshInstance2D" parent="LeftWires/Tip of wire2"]
+modulate = Color(0, 0, 0, 0.392157)
+position = Vector2(-0.0273902, 0.176663)
+rotation = 0.6353
+scale = Vector2(1.10458, 0.164025)
+mesh = SubResource("QuadMesh_mptvy")
+
+[node name="blackbar2" type="MeshInstance2D" parent="LeftWires/Tip of wire2"]
+modulate = Color(0, 0, 0, 0.392157)
+position = Vector2(0.0506585, -0.486689)
+rotation = 0.6353
+scale = Vector2(0.976143, 0.121921)
+mesh = SubResource("QuadMesh_mptvy")
+
+[node name="Bluewire" type="MeshInstance2D" parent="LeftWires"]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(40, 375)
+rotation = 3.14159
+scale = Vector2(78.2901, -35.8747)
+mesh = SubResource("BoxMesh_6s5ml")
+
+[node name="ControlBlueleft" type="Control" parent="LeftWires"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 355.0
+offset_right = 103.0
+offset_bottom = 395.0
+
+[node name="Tip of wire4" type="MeshInstance2D" parent="LeftWires"]
+modulate = Color(0.588235, 0.294118, 0, 1)
+position = Vector2(90, 375)
+rotation = 1.5708
+scale = Vector2(34.1987, 14.4337)
+mesh = SubResource("CapsuleMesh_yolyl")
+
+[node name="blackbar" type="MeshInstance2D" parent="LeftWires/Tip of wire4"]
+modulate = Color(0, 0, 0, 0.392157)
+position = Vector2(-0.0273902, 0.176663)
+rotation = 0.6353
+scale = Vector2(1.10458, 0.164025)
+mesh = SubResource("QuadMesh_mptvy")
+
+[node name="blackbar2" type="MeshInstance2D" parent="LeftWires/Tip of wire4"]
+modulate = Color(0, 0, 0, 0.392157)
+position = Vector2(0.0506585, -0.486689)
+rotation = 0.6353
+scale = Vector2(0.976143, 0.121921)
+mesh = SubResource("QuadMesh_mptvy")
+
+[node name="Greenwire" type="MeshInstance2D" parent="LeftWires"]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(40, 226)
+rotation = 3.14159
+scale = Vector2(78.2901, -35.8747)
+mesh = SubResource("BoxMesh_6s5ml")
+
+[node name="ControlGreenleft" type="Control" parent="LeftWires"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 205.0
+offset_right = 103.0
+offset_bottom = 245.0
+
+[node name="Tip of wire3" type="MeshInstance2D" parent="LeftWires"]
+modulate = Color(0.588235, 0.294118, 0, 1)
+position = Vector2(89, 226)
+rotation = 1.5708
+scale = Vector2(34.1987, 14.4337)
+mesh = SubResource("CapsuleMesh_yolyl")
+
+[node name="blackbar" type="MeshInstance2D" parent="LeftWires/Tip of wire3"]
+modulate = Color(0, 0, 0, 0.392157)
+position = Vector2(-0.0273902, 0.176663)
+rotation = 0.6353
+scale = Vector2(1.10458, 0.164025)
+mesh = SubResource("QuadMesh_mptvy")
+
+[node name="blackbar2" type="MeshInstance2D" parent="LeftWires/Tip of wire3"]
+modulate = Color(0, 0, 0, 0.392157)
+position = Vector2(0.0506585, -0.486689)
+rotation = 0.6353
+scale = Vector2(0.976143, 0.121921)
+mesh = SubResource("QuadMesh_mptvy")
+
+[node name="Rightwires" type="Node2D" parent="."]
+
+[node name="Redwire2" type="MeshInstance2D" parent="Rightwires"]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(1112, 525)
+rotation = 3.14159
+scale = Vector2(78.2901, -35.8747)
+mesh = SubResource("BoxMesh_6s5ml")
+
+[node name="ControlRedright" type="Control" parent="Rightwires"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1051.0
+offset_top = 506.0
+offset_right = 1154.0
+offset_bottom = 546.0
+
+[node name="Tip of wire9" type="MeshInstance2D" parent="Rightwires"]
+modulate = Color(0.588235, 0.294118, 0, 1)
+position = Vector2(1068, 525)
+rotation = 1.5708
+scale = Vector2(34.1987, 14.4337)
+mesh = SubResource("CapsuleMesh_yolyl")
+
+[node name="blackbar" type="MeshInstance2D" parent="Rightwires/Tip of wire9"]
+modulate = Color(0, 0, 0, 0.392157)
+position = Vector2(-0.0273902, 0.176663)
+rotation = 0.6353
+scale = Vector2(1.10458, 0.164025)
+mesh = SubResource("QuadMesh_mptvy")
+
+[node name="blackbar2" type="MeshInstance2D" parent="Rightwires/Tip of wire9"]
+modulate = Color(0, 0, 0, 0.392157)
+position = Vector2(0.0506585, -0.486689)
+rotation = 0.6353
+scale = Vector2(0.976143, 0.121921)
+mesh = SubResource("QuadMesh_mptvy")
+
+[node name="Yellowire" type="MeshInstance2D" parent="Rightwires"]
+modulate = Color(1, 1, 0, 1)
+position = Vector2(1112, 226)
+rotation = 3.14159
+scale = Vector2(78.2901, -35.8747)
+mesh = SubResource("BoxMesh_6s5ml")
+
+[node name="ControlYellowright" type="Control" parent="Rightwires"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1051.0
+offset_top = 207.0
+offset_right = 1154.0
+offset_bottom = 247.0
+
+[node name="Tip of wire7" type="MeshInstance2D" parent="Rightwires"]
+modulate = Color(0.588235, 0.294118, 0, 1)
+position = Vector2(1065, 226)
+rotation = 1.5708
+scale = Vector2(34.1987, 14.4337)
+mesh = SubResource("CapsuleMesh_yolyl")
+
+[node name="blackbar" type="MeshInstance2D" parent="Rightwires/Tip of wire7"]
+modulate = Color(0, 0, 0, 0.392157)
+position = Vector2(-0.0273902, 0.176663)
+rotation = 0.6353
+scale = Vector2(1.10458, 0.164025)
+mesh = SubResource("QuadMesh_mptvy")
+
+[node name="blackbar2" type="MeshInstance2D" parent="Rightwires/Tip of wire7"]
+modulate = Color(0, 0, 0, 0.392157)
+position = Vector2(0.0506585, -0.486689)
+rotation = 0.6353
+scale = Vector2(0.976143, 0.121921)
+mesh = SubResource("QuadMesh_mptvy")
+
+[node name="Bluewire2" type="MeshInstance2D" parent="Rightwires"]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(1112, 375)
+rotation = 3.14159
+scale = Vector2(78.2901, -35.8747)
+mesh = SubResource("BoxMesh_6s5ml")
+
+[node name="ControlBlueright" type="Control" parent="Rightwires"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1052.0
+offset_top = 356.0
+offset_right = 1155.0
+offset_bottom = 396.0
+
+[node name="Tip of wire8" type="MeshInstance2D" parent="Rightwires"]
+modulate = Color(0.588235, 0.294118, 0, 1)
+position = Vector2(1067, 375)
+rotation = 1.5708
+scale = Vector2(34.1987, 14.4337)
+mesh = SubResource("CapsuleMesh_yolyl")
+
+[node name="blackbar" type="MeshInstance2D" parent="Rightwires/Tip of wire8"]
+modulate = Color(0, 0, 0, 0.392157)
+position = Vector2(-0.0273902, 0.176663)
+rotation = 0.6353
+scale = Vector2(1.10458, 0.164025)
+mesh = SubResource("QuadMesh_mptvy")
+
+[node name="blackbar2" type="MeshInstance2D" parent="Rightwires/Tip of wire8"]
+modulate = Color(0, 0, 0, 0.392157)
+position = Vector2(0.0506585, -0.486689)
+rotation = 0.6353
+scale = Vector2(0.976143, 0.121921)
+mesh = SubResource("QuadMesh_mptvy")
+
+[node name="Greenwire2" type="MeshInstance2D" parent="Rightwires"]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(1112, 75)
+rotation = 3.14159
+scale = Vector2(78.2901, -35.8747)
+mesh = SubResource("BoxMesh_6s5ml")
+
+[node name="ControlGreenright" type="Control" parent="Rightwires"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1051.0
+offset_top = 55.0
+offset_right = 1154.0
+offset_bottom = 95.0
+
+[node name="Tip of wire6" type="MeshInstance2D" parent="Rightwires"]
+modulate = Color(0.588235, 0.294118, 0, 1)
+position = Vector2(1064, 75)
+rotation = 1.5708
+scale = Vector2(34.1987, 14.4337)
+mesh = SubResource("CapsuleMesh_yolyl")
+
+[node name="blackbar" type="MeshInstance2D" parent="Rightwires/Tip of wire6"]
+modulate = Color(0, 0, 0, 0.392157)
+position = Vector2(-0.0273902, 0.176663)
+rotation = 0.6353
+scale = Vector2(1.10458, 0.164025)
+mesh = SubResource("QuadMesh_mptvy")
+
+[node name="blackbar2" type="MeshInstance2D" parent="Rightwires/Tip of wire6"]
+modulate = Color(0, 0, 0, 0.392157)
+position = Vector2(0.0506585, -0.486689)
+rotation = 0.6353
+scale = Vector2(0.976143, 0.121921)
+mesh = SubResource("QuadMesh_mptvy")
+
+[node name="Labelwire" type="Label" parent="."]
+offset_left = 2.0
+offset_top = 63.0
+offset_right = 14.0
+offset_bottom = 89.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "R"
+
+[node name="Labelwire8" type="Label" parent="."]
+offset_left = 1.0
+offset_top = 213.0
+offset_right = 13.0
+offset_bottom = 239.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "G"
+
+[node name="Labelwire7" type="Label" parent="."]
+offset_left = 1141.0
+offset_top = 213.0
+offset_right = 1153.0
+offset_bottom = 239.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Y"
+
+[node name="Labelwire6" type="Label" parent="."]
+offset_left = 1138.0
+offset_top = 362.0
+offset_right = 1150.0
+offset_bottom = 388.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "B"
+
+[node name="Labelwire5" type="Label" parent="."]
+offset_left = 1.0
+offset_top = 512.0
+offset_right = 13.0
+offset_bottom = 538.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Y"
+
+[node name="Labelwire4" type="Label" parent="."]
+offset_left = 1.0
+offset_top = 362.0
+offset_right = 13.0
+offset_bottom = 388.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "B"
+
+[node name="Labelwire3" type="Label" parent="."]
+offset_left = 1136.0
+offset_top = 63.0
+offset_right = 1148.0
+offset_bottom = 89.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "G
+"
+
+[node name="Labelwire2" type="Label" parent="."]
+offset_left = 1136.0
+offset_top = 514.0
+offset_right = 1148.0
+offset_bottom = 540.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "R"
+
+[node name="connection" type="Node2D" parent="."]
+
+[node name="Redconnection" type="Node2D" parent="connection"]
+
+[node name="wire3" type="MeshInstance2D" parent="connection/Redconnection"]
+visible = false
+modulate = Color(1, 0, 0, 1)
+position = Vector2(580, 226)
+rotation = -2.83616
+scale = Vector2(1019.47, -32.3217)
+mesh = SubResource("BoxMesh_dx0l7")
+
+[node name="wire4" type="MeshInstance2D" parent="connection/Redconnection"]
+visible = false
+modulate = Color(1, 0, 0, 1)
+position = Vector2(577, 300)
+rotation = -2.70526
+scale = Vector2(1072.95, -32.3217)
+mesh = SubResource("BoxMesh_dx0l7")
+
+[node name="wire" type="MeshInstance2D" parent="connection/Redconnection"]
+visible = false
+modulate = Color(1, 0, 0, 1)
+position = Vector2(572.429, 75.6963)
+scale = Vector2(-978.62, 35.8155)
+mesh = SubResource("BoxMesh_dx0l7")
+
+[node name="wire2" type="MeshInstance2D" parent="connection/Redconnection"]
+visible = false
+modulate = Color(1, 0, 0, 1)
+position = Vector2(574, 150)
+rotation = 0.148353
+scale = Vector2(-987.327, 34.4229)
+mesh = SubResource("BoxMesh_dx0l7")
+
+[node name="Greenconnection" type="Node2D" parent="connection"]
+
+[node name="wire3" type="MeshInstance2D" parent="connection/Greenconnection"]
+visible = false
+modulate = Color(0, 1, 0, 1)
+position = Vector2(577, 301)
+rotation = -2.98451
+scale = Vector2(990.327, -32.3217)
+mesh = SubResource("BoxMesh_dx0l7")
+
+[node name="wire4" type="MeshInstance2D" parent="connection/Greenconnection"]
+visible = false
+modulate = Color(0, 1, 0, 1)
+position = Vector2(576, 374)
+rotation = -2.84489
+scale = Vector2(1028.38, -32.3217)
+mesh = SubResource("BoxMesh_dx0l7")
+
+[node name="wire" type="MeshInstance2D" parent="connection/Greenconnection"]
+visible = false
+modulate = Color(0, 1, 0, 1)
+position = Vector2(576, 147)
+rotation = -0.15708
+scale = Vector2(-989.761, 35.8155)
+mesh = SubResource("BoxMesh_dx0l7")
+
+[node name="wire2" type="MeshInstance2D" parent="connection/Greenconnection"]
+visible = false
+modulate = Color(0, 1, 0, 1)
+position = Vector2(577, 226)
+scale = Vector2(-987.327, 34.4229)
+mesh = SubResource("BoxMesh_dx0l7")
+
+[node name="Blueconnection" type="Node2D" parent="connection"]
+
+[node name="wire3" type="MeshInstance2D" parent="connection/Blueconnection"]
+visible = false
+modulate = Color(0, 0, 1, 1)
+position = Vector2(578, 375)
+scale = Vector2(984.736, -32.3217)
+mesh = SubResource("BoxMesh_dx0l7")
+
+[node name="wire4" type="MeshInstance2D" parent="connection/Blueconnection"]
+visible = false
+modulate = Color(0, 0, 1, 1)
+position = Vector2(579, 450)
+rotation = -2.99324
+scale = Vector2(982.975, -32.3217)
+mesh = SubResource("BoxMesh_dx0l7")
+
+[node name="wire" type="MeshInstance2D" parent="connection/Blueconnection"]
+visible = false
+modulate = Color(0, 0, 1, 1)
+position = Vector2(574, 225)
+rotation = -0.305433
+scale = Vector2(-1017.2, 35.8155)
+mesh = SubResource("BoxMesh_dx0l7")
+
+[node name="wire2" type="MeshInstance2D" parent="connection/Blueconnection"]
+visible = false
+modulate = Color(0, 0, 1, 1)
+position = Vector2(576, 300)
+rotation = -0.150098
+scale = Vector2(-987.327, 34.4229)
+mesh = SubResource("BoxMesh_dx0l7")
+
+[node name="Yellowconnection" type="Node2D" parent="connection"]
+
+[node name="wire3" type="MeshInstance2D" parent="connection/Yellowconnection"]
+visible = false
+modulate = Color(1, 1, 0, 1)
+position = Vector2(579, 451)
+rotation = -3.29169
+scale = Vector2(998.531, -32.3217)
+mesh = SubResource("BoxMesh_dx0l7")
+
+[node name="wire4" type="MeshInstance2D" parent="connection/Yellowconnection"]
+visible = false
+modulate = Color(1, 1, 0, 1)
+position = Vector2(578, 525)
+scale = Vector2(989.474, -32.3217)
+mesh = SubResource("BoxMesh_dx0l7")
+
+[node name="wire" type="MeshInstance2D" parent="connection/Yellowconnection"]
+visible = false
+modulate = Color(1, 1, 0, 1)
+position = Vector2(577.088, 301.56)
+rotation = -0.436332
+scale = Vector2(-1071.72, 35.8155)
+mesh = SubResource("BoxMesh_dx0l7")
+
+[node name="wire2" type="MeshInstance2D" parent="connection/Yellowconnection"]
+visible = false
+modulate = Color(1, 1, 0, 1)
+position = Vector2(576, 377)
+rotation = -0.296706
+scale = Vector2(-1020.81, 34.4229)
+mesh = SubResource("BoxMesh_dx0l7")
+
+[connection signal="mouse_entered" from="LeftWires/ControlRedLeft" to="." method="_on_control_red_left_mouse_entered"]
+[connection signal="mouse_exited" from="LeftWires/ControlRedLeft" to="." method="_on_control_red_left_mouse_exited"]
+[connection signal="mouse_entered" from="LeftWires/ControlYellowleft" to="." method="_on_control_yellowleft_mouse_entered"]
+[connection signal="mouse_exited" from="LeftWires/ControlYellowleft" to="." method="_on_control_yellowleft_mouse_exited"]
+[connection signal="mouse_entered" from="LeftWires/ControlBlueleft" to="." method="_on_control_blueleft_mouse_entered"]
+[connection signal="mouse_exited" from="LeftWires/ControlBlueleft" to="." method="_on_control_blueleft_mouse_exited"]
+[connection signal="mouse_entered" from="LeftWires/ControlGreenleft" to="." method="_on_control_greenleft_mouse_entered"]
+[connection signal="mouse_exited" from="LeftWires/ControlGreenleft" to="." method="_on_control_greenleft_mouse_exited"]
+[connection signal="mouse_entered" from="Rightwires/ControlRedright" to="." method="_on_control_redright_mouse_entered"]
+[connection signal="mouse_exited" from="Rightwires/ControlRedright" to="." method="_on_control_redright_mouse_exited"]
+[connection signal="mouse_entered" from="Rightwires/ControlYellowright" to="." method="_on_control_yellowright_mouse_entered"]
+[connection signal="mouse_exited" from="Rightwires/ControlYellowright" to="." method="_on_control_yellowright_mouse_exited"]
+[connection signal="mouse_entered" from="Rightwires/ControlBlueright" to="." method="_on_control_blueright_mouse_entered"]
+[connection signal="mouse_exited" from="Rightwires/ControlBlueright" to="." method="_on_control_blueright_mouse_exited"]
+[connection signal="mouse_entered" from="Rightwires/ControlGreenright" to="." method="_on_control_greenright_mouse_entered"]
+[connection signal="mouse_exited" from="Rightwires/ControlGreenright" to="." method="_on_control_greenright_mouse_exited"]
