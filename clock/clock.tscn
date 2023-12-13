@@ -1,11 +1,11 @@
 [gd_scene load_steps=5 format=3 uid="uid://cec1scgkpwocd"]
 
-[ext_resource type="Script" path="res://main.gd" id="1_a7vlk"]
-[ext_resource type="Texture2D" uid="uid://bnfjeq03cj8qw" path="res://clock-face-without-hands.png" id="1_or735"]
-[ext_resource type="Texture2D" uid="uid://j8hh6yrr36j0" path="res://hourarm.png" id="2_o5e1s"]
-[ext_resource type="Texture2D" uid="uid://dutskuqni252t" path="res://minutearm.png" id="4_wigg2"]
+[ext_resource type="Texture2D" uid="uid://bnfjeq03cj8qw" path="res://clock/clock-face-without-hands.png" id="1_or735"]
+[ext_resource type="Script" path="res://clock/clock.gd" id="1_xr0is"]
+[ext_resource type="Texture2D" uid="uid://j8hh6yrr36j0" path="res://clock/hourarm.png" id="2_o5e1s"]
+[ext_resource type="Texture2D" uid="uid://dutskuqni252t" path="res://clock/minutearm.png" id="4_wigg2"]
 
-[node name="main" type="Control"]
+[node name="Clock" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -14,7 +14,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 6
-script = ExtResource("1_a7vlk")
+script = ExtResource("1_xr0is")
 metadata/_edit_use_anchors_ = true
 
 [node name="clock" type="Node2D" parent="."]

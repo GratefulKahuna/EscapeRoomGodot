@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://j8hh6yrr36j0"
-path="res://.godot/imported/hourarm.png-3d6be1ea489bc3ef56b927c0e80e3c1e.ctex"
+path="res://.godot/imported/hourarm.png-8235c78a9649cb3879fb50bc7494dbbf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://hourarm.png"
-dest_files=["res://.godot/imported/hourarm.png-3d6be1ea489bc3ef56b927c0e80e3c1e.ctex"]
+source_file="res://clock/hourarm.png"
+dest_files=["res://.godot/imported/hourarm.png-8235c78a9649cb3879fb50bc7494dbbf.ctex"]
 
 [params]
 

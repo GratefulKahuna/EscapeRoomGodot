@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dutskuqni252t"
-path="res://.godot/imported/minutearm.png-70405d583a080a5da7164340f55d606c.ctex"
+path="res://.godot/imported/minutearm.png-c9371da9208450783a529ea020b0092e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://minutearm.png"
-dest_files=["res://.godot/imported/minutearm.png-70405d583a080a5da7164340f55d606c.ctex"]
+source_file="res://clock/minutearm.png"
+dest_files=["res://.godot/imported/minutearm.png-c9371da9208450783a529ea020b0092e.ctex"]
 
 [params]
 
