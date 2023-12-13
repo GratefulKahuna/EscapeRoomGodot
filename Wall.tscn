@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://ctnfffld5p4y4"]
+
+[ext_resource type="PackedScene" path="res://Wall.glb" id="1_tpi4u"]
+
+[node name="Wall" type="Node3D"]
+transform = Transform3D(0.216424, 0, 0, 0, 0.931822, 0, 0, 0, 0.931822, -0.613785, 0, 0)
+
+[node name="Wall" parent="." instance=ExtResource("1_tpi4u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.803905, 0, -0.993435)
