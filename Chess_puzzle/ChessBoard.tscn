@@ -1,11 +1,13 @@
-[gd_scene load_steps=11 format=3 uid="uid://rav38hql1cbk"]
+[gd_scene load_steps=13 format=3 uid="uid://rav38hql1cbk"]
 
 [ext_resource type="PackedScene" uid="uid://df1vkxi67mlhc" path="res://Chess_puzzle/ChessBlackSpot.tscn" id="2_8pe2t"]
 [ext_resource type="PackedScene" uid="uid://3au55hyrxoxm" path="res://Chess_puzzle/ChessWhiteSpot.tscn" id="2_kehix"]
 [ext_resource type="PackedScene" uid="uid://c24den3m0g1v" path="res://Chess_puzzle/ChessBlackSpotWhiteBishop.tscn" id="4_4jlk8"]
 [ext_resource type="PackedScene" uid="uid://33nj4cmc802p" path="res://Chess_puzzle/ChessBlackSpotWhiteKing.tscn" id="4_8fout"]
 [ext_resource type="PackedScene" uid="uid://b7ymtftrcc6rs" path="res://Chess_puzzle/ChessBlackSpotWhiteHorse.tscn" id="4_m3wfe"]
+[ext_resource type="PackedScene" uid="uid://ct1xeta4w1q0g" path="res://Chess_puzzle/ChessPawnSpot.tscn" id="4_u0jtq"]
 [ext_resource type="PackedScene" uid="uid://dag6n3p5hgbje" path="res://Chess_puzzle/ChessWhiteSpotBlackKing.tscn" id="4_xr0sy"]
+[ext_resource type="PackedScene" uid="uid://cx2ldc1iv2fq1" path="res://Chess_puzzle/ChessRookSpot.tscn" id="5_7nl78"]
 [ext_resource type="PackedScene" uid="uid://ctm5svtajrh3e" path="res://Chess_puzzle/ChessWhiteSpotBlackBishop.tscn" id="5_fr778"]
 [ext_resource type="PackedScene" uid="uid://bmod0phfx7d2k" path="res://Chess_puzzle/ChessBlackSpotBlackRook.tscn" id="5_obpx8"]
 [ext_resource type="PackedScene" uid="uid://xcgqmjo70myr" path="res://Chess_puzzle/ChessWhiteSpotBlackQueen.tscn" id="6_eam7d"]
@@ -77,13 +79,13 @@ layout_mode = 2
 [node name="Chess_black_spot7" parent="NinePatchRect/GridContainer" instance=ExtResource("2_8pe2t")]
 layout_mode = 2
 
-[node name="Chess_white_spot7" parent="NinePatchRect/GridContainer" instance=ExtResource("2_kehix")]
+[node name="Chess_white_spot4" parent="NinePatchRect/GridContainer" instance=ExtResource("4_u0jtq")]
 layout_mode = 2
 
 [node name="Chess_black_spot8" parent="NinePatchRect/GridContainer" instance=ExtResource("2_8pe2t")]
 layout_mode = 2
 
-[node name="Chess_white_spot8" parent="NinePatchRect/GridContainer" instance=ExtResource("2_kehix")]
+[node name="Chess_white_spot7" parent="NinePatchRect/GridContainer" instance=ExtResource("5_7nl78")]
 layout_mode = 2
 
 [node name="Chess_white_spot9" parent="NinePatchRect/GridContainer" instance=ExtResource("2_kehix")]
