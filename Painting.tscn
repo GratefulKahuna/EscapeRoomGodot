@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://s3nd7til0nke"]
+
+[ext_resource type="PackedScene" uid="uid://b53fimh61vjwl" path="res://Painting.glb" id="1_ghuxu"]
+
+[node name="Painting" type="Node3D"]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, 0)
+
+[node name="Painting" parent="." instance=ExtResource("1_ghuxu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.604126, 0, 0.931357)
