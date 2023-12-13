@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://b8pcr7q1ak58v"]
 
-[ext_resource type="Script" path="res://Wire.gd" id="1_paywm"]
+[ext_resource type="Script" path="res://Wires/Wire.gd" id="1_paywm"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_6s5ml"]
 

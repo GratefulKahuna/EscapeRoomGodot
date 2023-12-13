@@ -151,79 +151,62 @@ func _input(event):
 
 func _on_control_red_left_mouse_entered():
 	redleft = true
-	print("red in")
 
 
 func _on_control_yellowleft_mouse_entered():
 	yellowleft = true
-	print("yellow in")
 
 
 func _on_control_blueleft_mouse_entered():
 	blueleft = true
-	print("blue in")
 
 
 func _on_control_greenleft_mouse_entered():
 	greenleft = true
-	print("green in")
 
 
 func _on_control_redright_mouse_entered():
 	redright = true
-	print("red in")
-
 
 func _on_control_yellowright_mouse_entered():
 	yellowright = true
-	print("yellow in")
 
 
 func _on_control_blueright_mouse_entered():
 	blueright = true
-	print("blue in")
 
 
 func _on_control_greenright_mouse_entered():
 	greenright = true
-	print("green in")
 
 
 func _on_control_red_left_mouse_exited():
 	redleft = false
-	print("red out")
 
 
 func _on_control_yellowleft_mouse_exited():
 	yellowleft = false
-	print("yellow out")
 
 
 func _on_control_blueleft_mouse_exited():
 	blueleft = false
-	print("blue out")
 
 
 func _on_control_greenleft_mouse_exited():
 	greenleft = false
-	print("green out")
 
 
 func _on_control_redright_mouse_exited():
 	redright = false
-	print("red out")
 
 
 func _on_control_yellowright_mouse_exited():
 	yellowright = false
-	print("yellow out")
 
 
 func _on_control_blueright_mouse_exited():
 	blueright = false
-	print("blue out")
 
 
 func _on_control_greenright_mouse_exited():
 	greenright = false
-	print("green out")

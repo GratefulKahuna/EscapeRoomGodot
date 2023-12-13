@@ -1,6 +1,6 @@
 extends Control
 
-const Password = "123"
+const Password = "413"
 @onready var label = $VBoxContainer/MarginContainer/Label
 
 func key_press(digit):
