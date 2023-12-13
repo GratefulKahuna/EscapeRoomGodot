@@ -19,14 +19,16 @@ metadata/_edit_use_anchors_ = true
 
 [node name="clock" type="Node2D" parent="."]
 clip_children = 1
-position = Vector2(600, 500)
+position = Vector2(600, 356)
 
 [node name="Clock-face-without-hands" type="Sprite2D" parent="clock"]
-scale = Vector2(2, 2)
+position = Vector2(-2, -36)
+scale = Vector2(2, 1.84874)
 texture = ExtResource("1_or735")
 
 [node name="Hours" type="Marker2D" parent="clock"]
-rotation = -6.28319
+position = Vector2(0, -37)
+rotation = 1.5708
 
 [node name="controlhour" type="Control" parent="clock/Hours"]
 layout_mode = 3
@@ -39,11 +41,13 @@ rotation = -1.5708
 scale = Vector2(8.19025, 1.31862)
 
 [node name="Hourarm" type="Sprite2D" parent="clock/Hours"]
-position = Vector2(0, -173)
+position = Vector2(0, -155)
+scale = Vector2(1, 0.904255)
 texture = ExtResource("2_o5e1s")
 
 [node name="Minutes" type="Marker2D" parent="clock"]
-rotation = -4.71239
+position = Vector2(0, -37)
+rotation = 4.71239
 
 [node name="controlminute" type="Control" parent="clock/Minutes"]
 layout_mode = 3
@@ -56,7 +60,8 @@ rotation = -1.5708
 scale = Vector2(7.58316, 1.31862)
 
 [node name="Minutearm" type="Sprite2D" parent="clock/Minutes"]
-position = Vector2(0, -150)
+position = Vector2(0, -134.5)
+scale = Vector2(1, 0.906061)
 texture = ExtResource("4_wigg2")
 
 [connection signal="mouse_entered" from="clock/Hours/controlhour" to="." method="_on_controlhour_mouse_entered"]
