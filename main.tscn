@@ -39,6 +39,7 @@ offset_top = 235.0
 offset_right = 1502.0
 offset_bottom = 1438.0
 scale = Vector2(0.3, 0.3)
+metadata/_edit_use_anchors_ = true
 
 [node name="chess_rook" parent="." instance=ExtResource("7_ojvp1")]
 position = Vector2(495, 125)

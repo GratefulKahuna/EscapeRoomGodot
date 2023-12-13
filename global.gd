@@ -1,6 +1,7 @@
 extends Node
 
 var pawn = preload("res://inventory/items/chess_pawn.tres")
+var rook = preload("res://inventory/items/chess_rook.tres")
 var inv: Inv = preload("res://inventory/player_inventory.tres")
 
 var selectedSlot : slotPanel = null
@@ -10,7 +11,7 @@ var slotFirst = false
 
 func isChessPiece(item):
 	print("testing, isChessPiece")
-	return item == pawn
+	return item == pawn or item == rook
 		
 
 # Called when the node enters the scene tree for the first time.

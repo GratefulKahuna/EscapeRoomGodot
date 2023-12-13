@@ -1,19 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://3au55hyrxoxm"]
+[gd_scene load_steps=3 format=3 uid="uid://cx2ldc1iv2fq1"]
 
-[ext_resource type="Script" path="res://Chess_puzzle/ChessWhiteSpot.gd" id="1_itjvh"]
-[ext_resource type="Texture2D" uid="uid://cup6d4v74vvp8" path="res://art/chess/ChessWhiteSpot.png" id="2_7ixhg"]
+[ext_resource type="Script" path="res://Chess_puzzle/ChessRookSpot.gd" id="1_fldk6"]
+[ext_resource type="Texture2D" uid="uid://cup6d4v74vvp8" path="res://art/chess/ChessWhiteSpot.png" id="2_nkgw0"]
 
-[node name="Chess_piece_p" type="Panel"]
+[node name="Chess_rook" type="Panel"]
 self_modulate = Color(1, 1, 1, 0)
 clip_contents = true
 custom_minimum_size = Vector2(150, 150)
 offset_right = 150.0
 offset_bottom = 150.0
-script = ExtResource("1_itjvh")
+script = ExtResource("1_fldk6")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(75, 75)
-texture = ExtResource("2_7ixhg")
+texture = ExtResource("2_nkgw0")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 custom_minimum_size = Vector2(150, 150)
