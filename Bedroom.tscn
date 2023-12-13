@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=3 uid="uid://bb37bso0ntvo8"]
+
+[ext_resource type="PackedScene" uid="uid://ctnfffld5p4y4" path="res://Wall.tscn" id="1_iq56p"]
+[ext_resource type="PackedScene" uid="uid://s3nd7til0nke" path="res://Painting.tscn" id="2_7iwbb"]
+[ext_resource type="PackedScene" uid="uid://u54b68ka1vus" path="res://bed_simple.tscn" id="3_pa16q"]
+[ext_resource type="PackedScene" uid="uid://dpl3wboax63xt" path="res://door.tscn" id="4_u8j2h"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Wall" parent="." instance=ExtResource("1_iq56p")]
+transform = Transform3D(0.216424, 0, 0, 0, 2.14153, 0, 0, 0, 9.72438, -0.740005, 0, 3.4298)
+
+[node name="Painting" parent="." instance=ExtResource("2_7iwbb")]
+transform = Transform3D(0.14406, 0, 0, 0, 0.147, 0, 0, 0, 0.15876, -0.509538, 0, 1.56999)
+
+[node name="Bed Simple" parent="." instance=ExtResource("3_pa16q")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.540235, 0, -12.8763)
+
+[node name="Wall2" parent="." instance=ExtResource("1_iq56p")]
+transform = Transform3D(0, 0, -9.72438, 0, 2.14153, 0, 0.216424, 0, 4.76837e-07, -0.740005, 0, 3.4298)
+
+[node name="Wall3" parent="." instance=ExtResource("1_iq56p")]
+transform = Transform3D(-0.216424, 0, -8.50132e-07, 0, 2.14153, 0, 1.89204e-08, 0, -9.72438, 18.4332, 0.0192509, -15.9261)
+
+[node name="Wall4" parent="." instance=ExtResource("1_iq56p")]
+transform = Transform3D(-1.89204e-08, 0, 5.10007, 0, 2.14153, 0, -0.216424, 0, -6.95945e-07, 9.23647, 0.019251, -15.923)
+
+[node name="Floor" parent="." instance=ExtResource("1_iq56p")]
+transform = Transform3D(-1.89204e-08, 0, 10.1064, 0.216424, -5.57639e-07, 1.3791e-06, 9.46019e-09, 12.7573, 2.75713e-13, 19.171, -1.92299, -8.51293)
+
+[node name="Door" parent="." instance=ExtResource("4_u8j2h")]
+transform = Transform3D(-0.525041, 0, -0.851077, 0, 1, 0, 0.851077, 0, -0.525041, 8.20326, -2.38419e-07, -14.9833)
+
+[node name="Wall5" parent="." instance=ExtResource("1_iq56p")]
+transform = Transform3D(-1.89204e-08, 0, 3.66301, 0, 2.14153, 0, -0.216424, 0, -4.99848e-07, 18.7993, -0.00290382, -15.9256)
+
+[node name="Wall6" parent="." instance=ExtResource("1_iq56p")]
+transform = Transform3D(-1.87587e-08, 0, 1.12579, 0, 0.0952616, 0, -0.214574, 0, -1.53623e-07, 11.4878, 2.05821, -15.9256)
+
+[node name="Painting2" parent="." instance=ExtResource("2_7iwbb")]
+transform = Transform3D(0.14406, 0, 0, 0, 0.147, 0, 0, 0, 0.15876, -0.509538, 0, -1.37623)
+
+[node name="Painting3" parent="." instance=ExtResource("2_7iwbb")]
+transform = Transform3D(0.14406, 0, 0, 0, 0.147, 0, 0, 0, 0.15876, -0.509538, 0, -4.45483)
+
+[node name="Painting4" parent="." instance=ExtResource("2_7iwbb")]
+transform = Transform3D(-6.29706e-09, 0, -0.15876, 0, 0.147, 0, 0.14406, 0, -6.93962e-09, 13.483, 0, -15.4848)
