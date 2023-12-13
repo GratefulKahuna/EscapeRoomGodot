@@ -1,0 +1,65 @@
+[gd_scene load_steps=5 format=3 uid="uid://cec1scgkpwocd"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_a7vlk"]
+[ext_resource type="Texture2D" uid="uid://bnfjeq03cj8qw" path="res://clock-face-without-hands.png" id="1_or735"]
+[ext_resource type="Texture2D" uid="uid://j8hh6yrr36j0" path="res://hourarm.png" id="2_o5e1s"]
+[ext_resource type="Texture2D" uid="uid://dutskuqni252t" path="res://minutearm.png" id="4_wigg2"]
+
+[node name="main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+script = ExtResource("1_a7vlk")
+metadata/_edit_use_anchors_ = true
+
+[node name="clock" type="Node2D" parent="."]
+clip_children = 1
+position = Vector2(600, 500)
+
+[node name="Clock-face-without-hands" type="Sprite2D" parent="clock"]
+scale = Vector2(2, 2)
+texture = ExtResource("1_or735")
+
+[node name="Hours" type="Marker2D" parent="clock"]
+rotation = -6.28319
+
+[node name="controlhour" type="Control" parent="clock/Hours"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -25.0
+offset_top = -28.12
+offset_right = 15.0
+offset_bottom = 11.88
+rotation = -1.5708
+scale = Vector2(8.19025, 1.31862)
+
+[node name="Hourarm" type="Sprite2D" parent="clock/Hours"]
+position = Vector2(0, -173)
+texture = ExtResource("2_o5e1s")
+
+[node name="Minutes" type="Marker2D" parent="clock"]
+rotation = -4.71239
+
+[node name="controlminute" type="Control" parent="clock/Minutes"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -25.0
+offset_top = -11.853
+offset_right = 15.0
+offset_bottom = 28.147
+rotation = -1.5708
+scale = Vector2(7.58316, 1.31862)
+
+[node name="Minutearm" type="Sprite2D" parent="clock/Minutes"]
+position = Vector2(0, -150)
+texture = ExtResource("4_wigg2")
+
+[connection signal="mouse_entered" from="clock/Hours/controlhour" to="." method="_on_controlhour_mouse_entered"]
+[connection signal="mouse_exited" from="clock/Hours/controlhour" to="." method="_on_controlhour_mouse_exited"]
+[connection signal="mouse_entered" from="clock/Minutes/controlminute" to="." method="_on_controlminute_mouse_entered"]
+[connection signal="mouse_exited" from="clock/Minutes/controlminute" to="." method="_on_controlminute_mouse_exited"]
